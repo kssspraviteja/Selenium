@@ -25,6 +25,7 @@ public class Erail {
 		browser.manage().window().maximize();
 
 		browser.findElementById("buttonFromTo").click();
+		System.out.println(browser.findElementById("buttonFromTo").getLocation());
 		browser.findElementById("chkSelectDateOnly").click();
 		//		WebElement webtable = browser.findElementByXPath("//table[@class = 'DataTable TrainList TrainListHeader']");
 		//		WebElement webtable = browser.findElementByClassName("DataTable TrainList TrainListHeader");
@@ -95,4 +96,3 @@ public class Erail {
 
 
 }
-
