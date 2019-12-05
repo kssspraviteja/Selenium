@@ -80,18 +80,18 @@ public class Erail {
 		}
 
 		System.out.println(j);
-		
+
 		List<WebElement> traindetails = rowelements.get(j).findElements(By.tagName("td"));
 		traindetails.size();
 		for (int i = 0; i < traindetails.size()-1; i++) {
 			System.out.print(traindetails.get(i).getText()+ " ");
-			
+
 		}
-		
+
 	}		
 
 
-	
+
 
 
 }
