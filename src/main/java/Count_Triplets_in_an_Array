@@ -1,0 +1,36 @@
+package strings_and_arrays;
+
+import java.util.Arrays;
+
+public class Count_Triplets_in_an_Array {
+
+	static int[] a = new int[] {1,2,4,5,3};
+	public static void main(String[] args) {
+		int sum = 0;
+		int flag = 0;
+		Arrays.sort(a);
+
+		for (int i = 0; i < a.length; i++) {
+			sum = sum+a[i];
+
+
+			for(int j = 0; j<a.length; j++) {
+
+				if(sum == a[j]) {
+					flag++;
+					System.out.println("Triplet found");
+					System.out.println(sum);
+				}		
+
+
+
+
+
+			}
+			
+
+		}
+
+
+	}
+	}
